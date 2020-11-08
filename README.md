@@ -1,2 +1,3 @@
 # covidpercapita
-Calculating Country New Covid Case Rates per Capita
+
+Calculating the rolling average of country- and province-specific new COVID cases per capita
