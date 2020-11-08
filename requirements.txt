@@ -3,6 +3,7 @@ argon2-cffi==20.1.0
 async-generator==1.10
 attrs==20.2.0
 backcall==0.2.0
+beautifulsoup4==4.9.3
 bleach==3.1.5
 bokeh==2.2.1
 certifi==2020.6.20
@@ -11,6 +12,7 @@ chardet==3.0.4
 decorator==4.4.2
 defusedxml==0.6.0
 entrypoints==0.3
+html5lib==1.1
 idna==2.10
 importlib-metadata==1.7.0
 ipykernel==5.3.4
@@ -25,6 +27,7 @@ jupyter-client==6.1.7
 jupyter-console==6.2.0
 jupyter-core==4.6.3
 jupyterlab-pygments==0.1.1
+lxml==4.6.1
 MarkupSafe==1.1.1
 mistune==0.8.4
 nbclient==0.5.0
@@ -56,6 +59,7 @@ QtPy==1.9.0
 requests==2.24.0
 Send2Trash==1.5.0
 six==1.15.0
+soupsieve==2.0.1
 terminado==0.8.3
 testpath==0.4.4
 tornado==6.0.4

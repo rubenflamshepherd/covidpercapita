@@ -12,7 +12,7 @@ from bokeh.palettes import all_palettes
 from dataclasses import dataclass, field
 
 def get_countries(show_results=True):
-    """ Utility that gets country names. Useful for populating InputConfig.country above """
+    """ Utility that gets country names. Useful for creating InputConfig objects """
     url = f'https://api.covid19api.com/countries'
     result = requests.get(url).json()
     if show_results:
@@ -26,7 +26,6 @@ def get_data(country, country_pop, province=""):
     
     Country is inputted from user. I'm just going a simple Google 
         search to populate this.
-    
     """
     url = f'https://api.covid19api.com/dayone/country/{country}/status/confirmed/live'
     j = requests.get(url).json()
@@ -70,7 +69,8 @@ class InputConfig:
         self.df = get_data(self.country, self.base_pop, province=self.province)
         self.data_src = ColumnDataSource(self.df)
 
-        # Below is equivalent to the above, but in a more recognizable form
+
+# Below is equivalent to the above, but in a more recognizable form
 
 # class InputConfig:
 #     """ Object that holds data and labels of data for graphing """
@@ -83,6 +83,7 @@ class InputConfig:
 #         self.df = get_data(country, base_pop, province=province)
 #         self.data_src = ColumnDataSource(self.df)
 
+# Some Bokeh plotting accessories
 def get_hover_tool(renderer):
 
     return HoverTool(
